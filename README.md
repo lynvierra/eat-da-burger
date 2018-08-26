@@ -15,7 +15,7 @@ The demo of the burger eating application can be found [here](https://secret-lak
 
 To run the application locally, first clone this repository with the following command.
 
-	git clone git@github.com:lynvierra/burger.git
+	git clone git@github.com:lynvierra/eat-da-burger.git
 	
 Next, install the application dependencies.
 
