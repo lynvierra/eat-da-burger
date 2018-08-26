@@ -1,31 +1,27 @@
 {
-  "name": "eat-da-burger",
+  "name": "week-14-burger",
   "version": "1.0.0",
-  "description": "Buger eating application with Node.js, Express, Handlebars, and MySQL.",
-  "main": "index.js",
+  "description": "Week 14 Burger App with Node Express Handlebars MySQL",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lynvierra/eat-da-burger.git"
+    "url": "git+https://github.com/realzaidiguy/week-14-burger.git"
   },
-  "keywords": [
-    "burgers",
-    "eating",
-    "burgerfi"
-  ],
-  "author": "Anna D Derbakova",
+  "author": "Ali Zaidi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lynvierra/eat-da-burger/issues"
+    "url": "https://github.com/realzaidiguy/week-14-burger/issues"
   },
-  "homepage": "https://github.com/lynvierra/eat-da-burger#readme",
+  "homepage": "https://github.com/realzaidiguy/week-14-burger#readme",
   "dependencies": {
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.7",
-    "mysql": "^2.13.0"
+    "mysql": "^2.12.0"
   }
 }
