@@ -1,10 +1,9 @@
-// Import the ORM and connection objects
 var orm = require ('./orm.js');
 
-// Import the connection file directly, in order to terminate the connection at the end of the test run
+
 var connection = require ('./connection.js');
 
-// Select all entries from the database
+
 orm.selectAll('burgers', function (data) {
 	console.log('orm.selectAll test...\n\n');
 
@@ -19,7 +18,7 @@ orm.selectAll('burgers', function (data) {
 	}
 });
 
-// Insert a single entry into the database
+
 orm.insertOne('burgers', 
 	         ['burger_name', 'devoured'], 
 	         ['Success Story Mushroom Double-Stack Burger', false], 
@@ -29,7 +28,7 @@ orm.insertOne('burgers',
 	console.log('Inserted new row with ID = ' + data.insertId + '\n\n');
 });
 
-// Update a single entry in the database
+
 orm.updateOne('burgers', {devoured: true}, 'id = 7', function (data) {
 	console.log('\n\norm.updateOne test...\n\n');
 

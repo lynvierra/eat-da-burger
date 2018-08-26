@@ -13,12 +13,12 @@ if (process.env.JAWSDB_URL) {
 		port: 3306,
 		host: 'localhost',
 		user: 'root',
-		password: '',
+		password: 'root',
 		database: 'burgers_db'
 	})
 };
 
-// Make the connection to MySQL
+
 connection.connect(function(err) {
   if (err) {
     console.error('ERROR: MySQL connection error -- ' + err.stack + '\n\n');
@@ -27,5 +27,5 @@ connection.connect(function(err) {
   console.log('Connected to MySQL database as id ' + connection.threadId + '\n\n');
 });
 
-// Export connection for ORM use
+
 module.exports = connection;

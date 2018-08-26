@@ -1,10 +1,7 @@
-// Import the burger model to gain access to the database functions
 var burger = require('./burger.js');
 
-// Import the connection file directly, in order to terminate the connection at the end of the test run
 var connection = require('../config/connection.js');
 
-// Select all entries from the database
 burger.selectAll(function (data) {
 	console.log('burger.selectAll test...\n\n');
 
@@ -19,7 +16,6 @@ burger.selectAll(function (data) {
 	}
 });
 
-// Insert a single entry into the database
 burger.insertOne(['burger_name', 'devoured'], 
 	         	 ['Late Night Juicy Burger', false], 
 	    		 function (data) {
@@ -29,7 +25,6 @@ burger.insertOne(['burger_name', 'devoured'],
 				 }
 );
 
-// Update a single entry in the database
 burger.updateOne({devoured: true}, 'id = 10', function (data) {
 	console.log('\n\nburger.updateOne test...\n\n');
 

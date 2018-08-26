@@ -1,5 +1,5 @@
 # Eat Da Burger!
-A Burger Eatin' Application With Node.js/Express/MySQL/Handlebars/Materialize
+A Burger Eatin' Application With Node.js/Express/MySQL/Handlebars
 
 ## Description
 
@@ -15,7 +15,7 @@ The demo of the burger eating application can be found [here](https://secret-lak
 
 To run the application locally, first clone this repository with the following command.
 
-	git clone git@github.com:angrbrd/eat-da-burger.git
+	git clone git@github.com:lynvierra/burger.git
 	
 Next, install the application dependencies.
 
